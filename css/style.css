@@ -9702,3 +9702,111 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+  /* Dark mode */
+
+  body.dark-mode h1 {
+    color: var(--light) !important;
+  }
+  body.dark-mode h2 {
+    color: var(--light) !important;
+  }
+  body.dark-mode h3 {
+    color: var(--light) !important;
+  }
+  body.dark-mode h4 {
+    color: var(--light) !important;
+  }
+  body.dark-mode h5 {
+    color: var(--light) !important;
+  }
+  body.dark-mode .desc p{
+    color: var(--light) !important;
+  }
+  body.dark-mode .panel-body{
+    color: var(--light) !important;
+  }
+  body.dark-mode .about-stats{
+    color: var(--light) !important;
+  }
+  body.dark-mode .btn-success{
+    color: var(--light) !important;
+  }
+  body.dark-mode .navbar .nav-link span{
+    color: #009688 !important;
+  }
+  body.dark-mode .number{
+    color: #009688 !important;
+  }
+  body.dark-mode .heading-dark-mode{
+    color: #009688 !important;
+  }
+  body.dark-mode .heading-dark-mode .wrap{
+    color: #009688 !important;
+  }
+  
+
+  body.dark-mode .panel-title{
+    background-color: var(--dark) !important;
+  }
+  body.dark-mode .services-1{
+    background-color: var(--dark) !important;
+  }
+  body.dark-mode .rounded-lg{
+    background-color: var(--dark) !important;
+  }
+  body.dark-mode .navbar{
+    background-color: var(--dark) !important;
+  }
+  body.dark-mode .contact-info .box{
+    background-color: var(--dark) !important;
+  }
+
+  body.dark-mode i{
+    color: #1d7efd !important;
+  }
+  body.dark-mode .date{
+    color: #4596ff !important;
+  }
+  body.dark-mode .resume-wrap .icon{
+    background-color: #183f6e !important;
+  }
+  body.dark-mode .progress-value .h2{
+    color: var(--light) !important;
+  }
+  body.dark-mode .animate-box .progress-bar span{
+    color: var(--light) !important;
+  }
+  body.dark-mode .contact-info .icon{
+    background-color: #1d7efd !important;
+  }
+  body.dark-mode .ftco-hireme .overlay{
+    background-color: #1d7efd !important;
+  }
+  body.dark-mode .animate-box .color-1{
+    background-color: #1d7efd !important;
+  }
+  body.dark-mode .animate-box .color-2{
+    background-color: #1d7efd !important;
+  }
+  body.dark-mode .animate-box .color-3{
+    background-color: #1d7efd !important;
+  }
+  body.dark-mode .animate-box .color-4{
+    background-color: #1d7efd !important;
+  }
+  body.dark-mode .animate-box .color-5{
+    background-color: #1d7efd !important;
+  }
+  body.dark-mode .animate-box .color-6{
+    background-color: #1d7efd !important;
+  }
+  body.dark-mode .progress-left .progress-bar{
+    border-color: #1d7efd !important;
+  }
+  body.dark-mode .progress-right .progress-bar{
+    border-color: #1d7efd !important;
+  }
+  
+  
+  

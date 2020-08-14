@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body id="body" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -42,7 +42,8 @@
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <!-- <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li> -->
 	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			  <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			  <li class="nav-item"><span id="dark-toggle" class="nav-link" style="cursor: pointer;" onclick="toggleDarkMode()"><span id="dark-toggle-text">Dark Mode</span></span></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -53,11 +54,11 @@
         <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
           <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
           	<div class="text text-center">
-          		<span class="subheading">Hey! I'm</span>
+          		<span class="subheading heading-dark-mode">Hey! I'm</span>
 		  				<h1>Smit Sheth</h1>
 			  				<h2>I 
 								  <span
-								     class="txt-rotate"
+								     class="txt-rotate heading-dark-mode"
 								     data-period="2000"
 								     data-rotate='[ "am a Software Engineer.", "am a Web Developer.", "am a Data Science Enthusiast.", "am a Competitive Programmer.", "am a Problem Solver.", "see the glass Half Full."]'></span>
 								</h2>
@@ -86,10 +87,9 @@
     			<div class="col-md-8 col-lg-8 pl-md-5 py-5">
     				<div class="row justify-content-start pb-3">
 		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">About</h1>
 		            <h2 class="mb-6">Who Am I?</h2>
 		            <p>
-						<span style="color: #3e64ff;">Hello World!</span> I am a final year <b>Computer Science</b> undergraduate at 
+						<span class="heading-dark-mode" style="color: #3e64ff;">Hello World!</span> I am a final year <b>Computer Science</b> undergraduate at 
 						<b>BITS Pilani, Hyderabad</b> with a minor in <b>Data Science</b>. 
 						I am a dedicated and proactive <b>Software Engineer</b> with a strong background and experience of more than <b>2 years</b> 
 						in <b>Web Development</b> and <b>Competitive Programming</b>. 
@@ -119,13 +119,13 @@
 						<div class="col-md-6 col-lg-6">
 							<p class="mb-4">
 								<span class="number" data-number="16">0</span>
-								<span>Projects Completed</span>
+								<span class="about-stats">Projects Completed</span>
 							</p>
 						</div>
 						<div class="col-md-6 col-lg-6">
 							<p class="mb-4">
 								<span class="number" data-number="15000">0</span>+
-								<span>Lines Written</span>
+								<span class="about-stats">Lines Written</span>
 							</p>
 						</div>
 						
@@ -142,7 +142,6 @@
     	<div class="container-fluid px-md-5">
     		<div class="row justify-content-center py-5 mt-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">What do I do?</h1>
             <h2 class="mb-4">What do I do?</h2>
           </div>
         </div>
@@ -811,7 +810,6 @@
     	<div class="container-fluid px-md-0">
     		<div class="row no-gutters justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Our Projects</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
           </div>
@@ -920,8 +918,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Blog</h1>
-            <h2 class="mb-4">My Blog</h2>
+            <h2 class="mb-4">My Blogs</h2>
           </div>
         </div>
         <div class="row d-flex">
@@ -997,7 +994,6 @@
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
           </div>
         </div>
@@ -1084,6 +1080,22 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+  <script>
+	function addDarkmodeWidget() {
+		new Darkmode().showWidget();
+	}
+	window.addEventListener('load', addDarkmodeWidget);
+  </script> -->
+  <script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
+  <script type="text/javascript">
+  // Persistence disabled
+  var Nightly = new Nightly();
+  document.getElementById("dark-toggle").addEventListener("click", function(){
+    Nightly.toggle();
+  });
+
+</script>
   </body>
 </html>
