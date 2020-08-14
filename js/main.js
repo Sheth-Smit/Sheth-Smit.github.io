@@ -442,7 +442,6 @@ $(function() {
 
 toggleDarkMode = () => {
 	var body = document.getElementById("body");
-	console.log(body.className);
 	// (body.className === 'dark-mode') ? body.className = 'light-mode' : body.className = 'dark-mode';
 	if (body.className === 'dark-mode') {
 		body.className = 'light-mode';
